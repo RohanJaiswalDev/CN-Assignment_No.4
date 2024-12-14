@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: math;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.profile-header {
+    background-color: rgb(79, 186, 82);
+    color: #fff;
+    text-align: center;
+    padding: 30px;
+}
+
+.profile-header h1 {
+    font-size: 2.2rem;
+}
+
+.profile-header p {
+    font-size: 1.2rem;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.about-me .profile-logo {
+    max-width: 80px;
+    border-radius: 50%;
+}
+
+.about-me p {
+    flex: 1;
+}
+
+.courses {
+    padding: 20px;
+}
+
+.courses h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.course-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.course-card p {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+}
+
+.feedback {
+    padding: 20px;
+}
+
+.feedback h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.feedback-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.student-card {
+    flex: 1 1 calc(33.333% - 20px);
+    background: #f1f1f1;
+    color: #000;
+    padding: 40px 15px 40px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #d6bdbd;
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 5px;
+}
+
+span{
+    color: #fff;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .courses-list {
+        flex-direction: column;
+    }
+
+    .course-card {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .feedback-list {
+        flex-direction: column;
+    }
+
+    .student-card {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-header h1 {
+        font-size: 1.8rem;
+    }
+
+    .profile-header p {
+        font-size: 1rem;
+    }
+
+    .courses h2 {
+        font-size: 1.5rem;
+    }
+
+    .course-card h3 {
+        font-size: 1.2rem;
+    }
+}
